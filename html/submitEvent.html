@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        input{
+            display: block;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+            background-color: #222;
+            
+        }
+
+        .card{
+            display: inline-block;
+            margin-top: 40px;
+            margin-left: 10px;
+            padding: 16px 16px;            
+            max-height: 300px;
+            max-width: 250px;
+            border: 1px solid;
+            border-color: rgb(99, 95, 95);
+            border-radius: 5px;
+            background-color: rgb(246, 240, 240);
+        }
+        .profile{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .profile img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        h3{
+            font-size: 26px;
+            font-family: "Gilroy";
+        }
+        h5{
+            margin-top: 5px;
+            font-family: "Gilroy";
+        }
+        p{
+            margin-top: 5px;
+            font-family: "Gilroy";
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="Profile Pic">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Occupation">
+            <input type="text" placeholder="Info">
+            <input type="submit">
+        </form>
+
+    </div>
+    
+    <script src="../js/submit.js"></script>
+</body>
+</html>
