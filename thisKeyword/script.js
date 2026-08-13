@@ -70,14 +70,25 @@ const userManager = {
       btn.textContent = "Remove";
       card.appendChild(btn);
 
+      btn.dataset.userId = user.userId;
+      btn.addEventListener("click", function () {
+        userManager.removeUser(btn.dataset.userId);
+      });
+
       // Finally, append the card wherever needed, for example:
 
       document.querySelector(".users").appendChild(card);
     });
   },
 
-  removeUser: function () {
-    btn.addEventListener
+  removeUser: function (id) {
+    id = Number(id);
+
+    this.users = this.users.filter(function (user) {
+      return user.userId !== id
+    });
+
+    this.renderUi();
   },
 };
 
