@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/weatherApp/style.css">
+</head>
+<body>
+
+<div class="weather">
+    <div class="search-bar">
+        <input type="text" id="text" placeholder="Enter city name">
+        <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="weather-display"> 
+        <img src="/weatherApp/sun.png" >    
+        <h1 class="temperature" id="temp">29°c</h1>
+        <h2 class="city" id="cityname">Lucknow</h2>   
+    </div>
+
+    <div class="weather-details">
+        <div class="detail-item">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+                <p class="value" id="humidity">82%</p>
+                <p class="label">Humidity</p>
+            </div>
+        </div>
+        <div class="detail-item">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+                <p class="value" id="wind">12 km/h</p>
+                <p class="label">Wind Speed</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/weatherApp/script.js"></script>
+</body>
+</html>
